@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contacto | Zernike Panamá S.A.</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.contact-form{
+max-width:600px;
+margin:40px auto;
+background:#ffffff;
+padding:30px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2{
+margin-bottom:20px;
+}
+
+.contact-form label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+font-size:14px;
+}
+
+.contact-form textarea{
+height:120px;
+resize:vertical;
+}
+
+.contact-form button{
+margin-top:20px;
+background:#0a4c8a;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:15px;
+}
+
+.contact-form button:hover{
+background:#06345f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+    <img src="immagini/logo.png" alt="Zernike Panamá">
+    <span>Zernike Panamá S.A.</span>
+</div>
+<div class="contact-info">
+        <span>📞 +507 6675-8529</span>
+        <span>✉ contacto@zernikeal.com</span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes.html">Quienes Somos</a>
+        <div class="dropdown">
+        <a href="aplicaciones.html">Aplicaciones</a>
+
+        <div class="dropdown-content">
+            <a href="agua.html">Gestión del agua</a>
+            <a href="ambiental.html">Monitoreo ambiental</a>
+            <a href="estructural.html">Ingeniería civil y monitoreo estructural</a>
+            <a href="geodesia.html">Geodesia y geofísica</a>
+            <a href="fugas.html">Detección de fugas y gases</a>
+            <a href="meteorologia.html">Meteorología e hidrología</a>
+            <a href="industrial.html">Instrumentación industrial</a>
+        </div>
+    </div>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>    
+    </nav>
+</header>
+<section class="hero">
+<h1>Contacto</h1>
+<p>Solicite información o asesoría técnica</p>
+</section>
+
+<section>
+
+<div class="contact-form">
+
+<h2>Contáctanos</h2>
+
+<form action="https://formspree.io/f/mreynnjk" method="POST">
+<label>Nombre</label>
+<input type="text" name="nombre" required>
+
+<label>Correo electrónico</label>
+<input type="email" name="email" required>
+
+<label>Mensaje</label>
+<textarea name="mensaje" required></textarea>
+
+<button type="submit">Enviar mensaje</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+<p><strong>© 2026 Zernike Panamá S.A.</strong></p>
+<p>Ed. Vitro Loft - Piso 26, oficina C - Calle Erick del Valle – Panamá, República de Panamá</p>
+<p>Tel. +507 6675 8529 – Email: d.marchetti@zernikeal.com</p>
+</footer>
+
+</body>
+</html>

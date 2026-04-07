@@ -1,0 +1,823 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #0b3c5d, #00a8a8);
+    color: white;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(11,60,93,0.8), rgba(0,168,168,0.7)),
+                url('immagini/fotohome.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+
+    height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+.hero-producto{
+background: linear-gradient(rgba(11,60,93,0.8), rgba(0,168,168,0.7)),
+            url('immagini/fotohome.png');
+background-size: cover;
+background-position: center;
+
+color:white;
+text-align:center;
+
+height:320px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.producto-descripcion,
+.producto-caracteristicas,
+.producto-tecnico,
+.producto-galeria,
+.producto-download{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.producto-caracteristicas ul{
+line-height:1.8;
+}
+
+.producto-tecnico table{
+width:100%;
+border-collapse:collapse;
+}
+
+.producto-tecnico td{
+border-bottom:1px solid #ddd;
+padding:10px;
+}
+
+.galeria{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.galeria img{
+width:300px;
+border-radius:6px;
+}
+
+.boton-descarga{
+display:inline-block;
+background:#0b3c5d;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:60px 40px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:8px;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+text-decoration:none;
+color:inherit;
+
+width:220px;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* SPAZIO IMMAGINE */
+.card .img {
+    height: 120px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* LINK */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #0b3c5d, #00a8a8);
+    color: white;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.cards .card:last-child {
+    grid-column: 2;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:20px;
+font-weight:bold;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo img{
+height:90px;
+width:auto;
+}
+
+.software{
+padding:80px 40px;
+background:#f5f7fa;
+text-align:center;
+}
+
+.software-container{
+max-width:900px;
+margin:auto;
+}
+
+.software-img{
+width:100%;
+max-width:700px;
+margin:30px auto;
+display:block;
+border-radius:6px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.software-text{
+margin-top:20px;
+line-height:1.6;
+}
+
+.software-text h3{
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:#0a4c8a;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#06345f;
+}
+
+.cards .card:nth-child(5){
+grid-column:2;
+}
+
+.servicios{
+padding:80px 40px;
+background:#f5f7fa;
+}
+
+.servicios-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+max-width:1100px;
+margin:auto;
+}
+
+.servicio{
+background:white;
+padding:35px 30px;
+width:260px;
+border-radius:10px;
+text-align:center;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.servicio:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 22px rgba(0,0,0,0.15);
+}
+
+.servicio i{
+font-size:40px;
+color:#0a4c8a;
+margin-bottom:20px;
+}
+
+.servicio h3{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.servicio p{
+font-size:14px;
+line-height:1.5;
+color:#555;
+}
+
+.section-title{
+text-align: center;
+margin-bottom:40px;
+}
+
+.sectores-aplicacion {
+max-width: 1000px;
+margin: auto;
+padding: 40px 20px;
+}
+
+.sectores-aplicacion h3 {
+margin-top: 30px;
+}
+
+.sector-img {
+width: 100%;
+max-width: 700px;
+height: 350px;
+object-fit: cover;
+display: block;
+margin: 20px auto;
+}
+
+/* MENU A CASCATA */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, #0b3c5d, #00a8a8);
+    min-width: 260px;
+    padding-top: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.quienes-somos{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+font-family:Arial, Helvetica, sans-serif;
+line-height:1.6;
+color:#333;
+}
+
+.quienes-somos h1{
+font-size:36px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.quienes-somos h2{
+margin-top:40px;
+font-size:26px;
+color:#0b4a7a;
+border-bottom:2px solid #0b4a7a;
+padding-bottom:6px;
+}
+
+.quienes-somos h3{
+margin-top:25px;
+font-size:20px;
+color:#0b4a7a;
+}
+
+.quienes-somos p{
+margin-bottom:15px;
+}
+
+.quienes-somos ul{
+margin-left:20px;
+margin-bottom:20px;
+}
+
+.areas li{
+margin-bottom:10px;
+}
+
+.ventajas li{
+margin-bottom:18px;
+background:#f5f7fa;
+padding:12px;
+border-left:4px solid #0b4a7a;
+}
+
+/* CATALOGO PRODUCTOS */
+
+.catalogo{
+
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+text-align:center;
+
+}
+
+.grid-productos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(260px,320px));
+justify-content:center;
+gap:40px;
+margin-top:40px;
+
+}
+
+.producto-card{
+
+border:1px solid #ddd;
+padding:20px;
+border-radius:6px;
+background:white;
+transition:0.3s;
+
+}
+
+.producto-card:hover{
+
+transform:translateY(-5px);
+box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+
+}
+
+.producto-card img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+
+}
+
+.producto-card h3{
+
+margin-top:15px;
+
+}
+
+.producto-card p{
+
+font-size:14px;
+margin:10px 0;
+
+}
+
+.boton{
+
+display:inline-block;
+padding:10px 15px;
+background:#0b3c5d;
+color:white;
+text-decoration:none;
+border-radius:4px;
+
+}
+
+.boton:hover{
+
+background:#00a8a8;
+
+}/* CATALOGO PRODUCTOS */
+
+.catalogo{
+
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+text-align:center;
+
+}
+
+.grid-productos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+gap:40px;
+margin-top:40px;
+
+}
+
+.producto-card{
+
+border:1px solid #ddd;
+padding:20px;
+border-radius:6px;
+background:white;
+transition:0.3s;
+
+}
+
+.producto-card:hover{
+
+transform:translateY(-5px);
+box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+
+}
+
+.producto-card img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+
+}
+
+.producto-card h3{
+
+margin-top:15px;
+
+}
+
+.producto-card p{
+
+font-size:14px;
+margin:10px 0;
+
+}
+
+.producto-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.producto-card a{
+    margin-top:auto;
+}
+.boton{
+
+display:inline-block;
+padding:10px 15px;
+background:#0b3c5d;
+color:white;
+text-decoration:none;
+border-radius:4px;
+
+}
+
+.boton:hover{
+
+background:#00a8a8;
+
+}
+
+/* SEZIONI PAGINA PRODOTTO */
+
+.producto-descripcion,
+.producto-caracteristicas,
+.producto-beneficios {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* TITOLI SEZIONI */
+
+.producto-descripcion h2,
+.producto-caracteristicas h2,
+.producto-beneficios h2 {
+    color: #0b3c5d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00a8a8;
+    padding-bottom: 5px;
+}
+
+/* TESTO */
+
+.producto-descripcion p,
+.producto-beneficios p {
+    margin-bottom: 15px;
+}
+
+/* LISTE */
+
+.producto-descripcion ul,
+.producto-caracteristicas ul,
+.producto-beneficios ul {
+    margin-left: 20px;
+}
+
+.producto-descripcion li,
+.producto-caracteristicas li,
+.producto-beneficios li {
+    margin-bottom: 8px;
+}
+
+.hero {
+
+height:420px;
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+position:relative;
+
+animation: cambioFondo 20s infinite;
+}
+
+/* overlay blu trasparente */
+
+.hero-overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+rgba(11,60,93,0.7),
+rgba(0,168,168,0.6)
+);
+
+}
+
+/* testo */
+
+.hero-content{
+
+position:relative;
+z-index:2;
+
+}
+
+.hero h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+@keyframes cambioFondo {
+
+0%{
+background-image:url("immagini/fotohome.png");
+}
+
+33%{
+background-image:url("immagini/parej-richard.jpg");
+}
+
+66%{
+background-image:url("immagini/chuttersnap.jpg");
+}
+
+100%{
+background-image:url("immagini/crystal-kwok.jpg");
+}
+
+}
+
+header{
+position:relative;
+z-index:1000;
+}
+
+.catalogo-item img{
+width:80%;
+height:140px;
+object-fit:contain;
+display:block;
+margin:auto;
+}
+
+.producto-card{
+max-width:320px;
+margin:auto;
+padding:20px;
+}
+
+.perfil-descarga{
+margin-top:40px;
+padding:30px;
+background:#f5f5f5;
+border-radius:8px;
+}
+
+.boton-descarga{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+background:#0066cc;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.boton-descarga:hover{
+background:#004a99;
+}
+
+.tabla-parametros {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.tabla-parametros th,
+.tabla-parametros td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+
+.tabla-parametros th {
+background-color: #f4f4f4;
+}
+
+.catalogo-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.catalogo-item{
+background:#fff;
+border:1px solid #ddd;
+padding:15px;
+text-align:center;
+border-radius:6px;
+}
+
+.catalogo-item h3{
+margin:12px 0;
+font-size:18px;
+}
+
+.catalogo-item .btn{
+display:inline-block;
+margin-top:10px;
+padding:8px 14px;
+background:#005a8d;
+color:white;
+text-decoration:none;
+border-radius:4px;
+}
+
+.catalogo-item:hover{
+transform:translateY(-3px);
+box-shadow:0 6px 14px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.sensores-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:40px;
+margin-top:20px;
+}
+
+.sensores-grid ul{
+padding-left:18px;
+}
+
+/* layout immagini e video */
+
+.media-grid{
+display:grid;
+grid-template-columns:300px 300px 300px;
+grid-template-rows:auto auto;
+gap:30px;
+}
+
+/* la foto occupa due righe */
+
+.foto-producto{
+grid-row:1 / span 2;
+}
+
+.foto-producto img{
+width:300px;
+height:auto;
+display:block;
+}
+
+/* video */
+
+.video iframe{
+width:300px;
+height:170px;
+border:none;
+display:block;
+}
+
+.videos-columna{
+display:grid;
+grid-template-columns:300px 300px;
+gap:30px;
+}
+
+.titulo-videos{
+grid-column:1 / span 2;
+font-size:24px;
+font-weight:bold;
+margin-top:0;
+margin-bottom:15px;
+}
