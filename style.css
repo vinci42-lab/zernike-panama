@@ -821,3 +821,55 @@ font-weight:bold;
 margin-top:0;
 margin-bottom:15px;
 }
+
+/* contenitore scheda tecnica */
+
+.ficha-tecnica{
+max-width:900px;
+margin:auto;
+}
+
+/* titolo */
+
+.ficha-tecnica h2{
+text-align:center;
+margin-top:40px;
+color:#0b3d6d;
+}
+
+/* tabella */
+
+.tabla-especificaciones{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+font-size:14px;
+}
+
+/* intestazione */
+
+.tabla-especificaciones th{
+background:#0b3d6d;
+color:white;
+padding:10px;
+text-align:left;
+}
+
+/* celle */
+
+.tabla-especificaciones td{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+/* righe alternate */
+
+.tabla-especificaciones tr:nth-child(even){
+background:#f4f6f8;
+}
+
+/* evidenziare parametro */
+
+.tabla-especificaciones td:first-child{
+font-weight:600;
+}
